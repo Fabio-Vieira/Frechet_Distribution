@@ -32,7 +32,7 @@ updateFrechet <- function(X,Alpha,b = 1){
 
 ###########################################################################################
 
-X <- rfrechet(n = 50, lambda = 0.5, alpha = 0.25)
+X <- rfrechet(n = 50, lambda = 0.5, alpha = 0.25) #True values are alpha = 0.25 and lambda = 0.5
 hist(X)
 
 Iter <- 10000 #Number of iterations for the MCMC
