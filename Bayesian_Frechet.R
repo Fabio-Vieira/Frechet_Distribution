@@ -1,4 +1,4 @@
-#Function that'll be used to generate Fréchet samples using the inverse transform method
+#Function that'll be used to generate FrÃ©chet samples using the inverse transform method
 rfrechet <- function(n,lambda,alpha){
   U <- runif(n,0,1)
   x <- ((1/lambda) * log(1/U))^(-1/alpha)
@@ -35,7 +35,7 @@ updateFrechet <- function(X,Alpha,b = 1){
 X <- rfrechet(n = 50, lambda = 0.5, alpha = 0.25)
 hist(X)
 
-Iter <- 10000
+Iter <- 10000 #Number of iterations for the MCMC
 
 Lambda.out <- rep(NA,Iter) #Vector to store posterior samples of Lambda
 Alpha.out <- rep(NA, Iter) #Vector to store posterior samples of Alpha
